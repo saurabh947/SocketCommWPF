@@ -1,0 +1,23 @@
+﻿<Window x:Class="ServerSocketWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:debug="clr-namespace:System.Diagnostics;assembly=WindowsBase"
+        Title="Server Socket" Height="353" Width="364.507" Icon="icon (2).ico">
+    <!--    <Window.Resources>
+        <XmlDataProvider x:Key="thesaurus"
+            Source="\thesaurus.xml"
+            XPath="/thesaurus/words"
+            IsAsynchronous="True"
+            IsInitialLoadEnabled="True"
+            debug:PresentationTraceSources.TraceLevel="High" />
+    </Window.Resources> -->
+    <Grid Background="#FFD7CBFD">
+        <Button x:Name="Start_Button" Content="Start server" HorizontalAlignment="Left" Margin="60,49,0,0" VerticalAlignment="Top" Width="120" Click="Start_Click" Background="Black" Foreground="White"/>
+        <TextBox x:Name="tbStatus" HorizontalAlignment="Left" Margin="38,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Height="106"/>
+        <Button Name="Close_Button" Content="Close connection" HorizontalAlignment="Left" Margin="116,263,0,0" VerticalAlignment="Top" Width="120" Click="Close_Click" Background="Black" Foreground="White"/>
+        <Button Name="StartListen_Button" Content="Start listening" HorizontalAlignment="Left" Margin="191,49,0,0" VerticalAlignment="Top" Width="120" Click="Listen_Click" Background="Black" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="91,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="16" Text="Incoming Client connections:"/>
+        <Label Content="THE THESAURUS SERVER" HorizontalAlignment="Left" Margin="107,10,0,0" VerticalAlignment="Top" Width="146"/>
+        <TextBlock Name="status" HorizontalAlignment="Left" Margin="143,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="93"/>
+    </Grid>
+</Window>
